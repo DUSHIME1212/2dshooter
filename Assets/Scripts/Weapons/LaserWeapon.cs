@@ -1,3 +1,6 @@
+// Specific implementation of a laser weapon that can be upgraded, used by the player or enemies.
+// Handles firing projectiles and applying damage upgrades.
+
 using UnityEngine;
 
 public class LaserWeapon : Weapon

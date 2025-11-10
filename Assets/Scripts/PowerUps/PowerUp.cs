@@ -1,3 +1,6 @@
+// Base abstract class for all power-ups, handling falling movement, collision with player, and applying effects.
+// Subclasses implement specific power-up behaviors like shield, speed, or weapon upgrades.
+
 using UnityEngine;
 
 public abstract class PowerUp : MonoBehaviour

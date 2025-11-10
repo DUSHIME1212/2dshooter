@@ -1,3 +1,5 @@
+// Power-up that temporarily increases the player's movement speed by a multiplier for a set duration.
+
 using UnityEngine;
 
 public class SpeedPowerUp : PowerUp

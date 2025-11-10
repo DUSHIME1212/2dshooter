@@ -1,3 +1,6 @@
+// Controls the player's health, shooting, invulnerability, and interactions with enemies, bullets, and power-ups.
+// Implements IDamageable for consistent damage handling and manages player death and healing.
+
 using UnityEngine;
 #if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;

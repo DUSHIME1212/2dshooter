@@ -1,3 +1,6 @@
+// Base abstract class for all enemy types, handling common behaviors like movement, shooting, taking damage, and awarding score upon death.
+// Implements IDamageable for consistent damage handling and provides a framework for different enemy variants.
+
 using UnityEngine;
 
 public abstract class Enemy : MonoBehaviour, IDamageable

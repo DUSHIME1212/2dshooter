@@ -1,3 +1,5 @@
+// Handles the spawning of enemy waves at regular intervals, using the EnemyFactory to create random enemy types within defined boundaries.
+
 using UnityEngine;
 
 public class SpawnManager : MonoBehaviour

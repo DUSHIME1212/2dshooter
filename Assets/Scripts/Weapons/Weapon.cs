@@ -1,3 +1,6 @@
+// Base abstract class for all weapons, implementing IShootable interface.
+// Provides common weapon properties like fire rate, damage, and firing logic.
+
 using UnityEngine;
 
 public abstract class Weapon : MonoBehaviour, IShootable

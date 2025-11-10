@@ -1,3 +1,5 @@
+// Power-up that provides a shield effect, healing the player by a set amount when collected.
+
 using UnityEngine;
 
 public class ShieldPowerUp : PowerUp

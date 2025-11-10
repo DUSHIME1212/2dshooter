@@ -1,3 +1,5 @@
+// A basic enemy type that moves in a sinusoidal pattern down the screen, providing a simple threat for the player.
+
 using UnityEngine;
 
 public class BasicEnemy : Enemy

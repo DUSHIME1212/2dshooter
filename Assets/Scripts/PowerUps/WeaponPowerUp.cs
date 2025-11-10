@@ -1,3 +1,5 @@
+// Power-up that upgrades the player's weapon by increasing damage and fire rate.
+
 using UnityEngine;
 
 public class WeaponPowerUp : PowerUp

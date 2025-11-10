@@ -1,3 +1,6 @@
+// Manages the overall game state, including score tracking, game state transitions (playing, paused, game over),
+// and provides methods for restarting the game. Uses the Singleton pattern for global access.
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -37,6 +40,7 @@ public class GameManager : MonoBehaviour
     {
         CurrentScore += points;
         OnScoreChanged?.Invoke(CurrentScore);
+        GameEvents.Instance.ScoreChanged(CurrentScore);
         Debug.Log($"Score updated: {CurrentScore}");
     }
     

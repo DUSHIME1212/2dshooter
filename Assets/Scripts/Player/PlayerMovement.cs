@@ -1,3 +1,5 @@
+// Handles player movement using keyboard input (both old and new Input System), constraining movement within defined screen boundaries.
+
 using UnityEngine;
 #if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;

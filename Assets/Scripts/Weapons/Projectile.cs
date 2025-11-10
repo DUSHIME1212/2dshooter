@@ -1,3 +1,6 @@
+// Represents a projectile fired by weapons, handling movement, lifetime, and collision with targets.
+// Can be configured as player or enemy projectile with different behaviors.
+
 using UnityEngine;
 
 public class Projectile : MonoBehaviour
@@ -35,20 +38,16 @@ public class Projectile : MonoBehaviour
     }
     
     private void OnTriggerEnter2D(Collider2D other)
+{
+    if (isPlayerProjectile && other.CompareTag("Enemy"))
     {
-        if (isPlayerProjectile && other.CompareTag("Enemy"))
-        {
-            IDamageable damageable = other.GetComponent<IDamageable>();
-            damageable?.TakeDamage(damage);
-            Destroy(gameObject);
-        }
-        else if (!isPlayerProjectile && other.CompareTag("Player"))
-        {
-            Destroy(gameObject);
-        }
-        // else if (other.CompareTag("Boundary"))
-        // {
-        //     Destroy(gameObject);
-        // }
+        IDamageable damageable = other.GetComponent<IDamageable>();
+        damageable?.TakeDamage(damage);
+        Destroy(gameObject);
     }
+    else if (!isPlayerProjectile && other.CompareTag("Player"))
+    {
+        Destroy(gameObject);
+    }
+}
 }

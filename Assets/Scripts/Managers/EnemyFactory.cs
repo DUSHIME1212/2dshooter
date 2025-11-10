@@ -1,3 +1,5 @@
+// Factory class responsible for instantiating different types of enemies based on the EnemyType enum, ensuring proper setup and error handling.
+
 using UnityEngine;
 
 public enum EnemyType

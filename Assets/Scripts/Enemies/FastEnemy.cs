@@ -1,3 +1,5 @@
+// A fast-moving enemy that changes direction randomly, making it harder to hit and providing a greater challenge with higher speed and score value.
+
 using UnityEngine;
 
 public class FastEnemy : Enemy

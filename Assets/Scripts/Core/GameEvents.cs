@@ -1,3 +1,6 @@
+// Handles global game events and notifications, such as score changes, player health updates, and power-up collections.
+// Acts as a central event dispatcher using the Singleton pattern to ensure consistent event management across the game.
+
 using UnityEngine;
 
 public enum PowerUpType

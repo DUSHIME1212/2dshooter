@@ -1,3 +1,5 @@
+// A heavy enemy with high health and the ability to charge at the player, providing a tough challenge that rewards high score points.
+
 using UnityEngine;
 
 public class TankEnemy : Enemy
